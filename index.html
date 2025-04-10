@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lan="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>
+        Register
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <form action="" method="post">
+        <h1>REGISTER</h1>
+        <div class="content">
+            <div class="input-box">
+                <label for="Patient Name">User Name</label>
+                <input type="text" placeholder="Enter Name" name="uname" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Enter Your Email Address" name="email" required>
+            </div>
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder="Enter Your Phone Number" name="phone" required>
+            </div>
+           
+            <div class="input-box">
+                <label for="Age"> Age</label>
+                <input type="tel" placeholder="Enter Age" name="Age" required>
+            </div>
+           
+            <span class="gender-title">gender</span>
+            <div class="gender-category">
+               
+                <input type="radio" name="GENDER" id="male">
+                <lable for="male">Male</lable>
+                <input type="radio" name="gender" id="female">
+                <lable for="female">Female</lable>
+                <input type="radio" name="gender" id="others">
+                <lable for="others">Others</lable>
+            </div>
+
+        </div>
+       
+        <div class="button-container">
+            <button type="button" class="btn" onclick="window.location.href='Login.html';">Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
