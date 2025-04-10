@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-image: url('girl pic.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+       .nav li {
+            float: right;
+            list-style: none;
+        }
+        .nav a {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1rem;
+            font-weight: 550;
+            display: block;
+            padding: 5px 35px;
+            color: black;
+            text-decoration: none;
+        }
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+        .left-col {
+            margin-left: 11%;
+        }
+        .left-col h1 {
+            font-size: 50px;
+            color: crimson;
+        }
+        .right-col {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+            
+        }
+        .right-col a{
+            color :cadetblue;
+        }
+        .right-col p {
+            font-size: 21px;
+            color: black;
+            font-weight: 650;
+            margin-right: 20px;
+        }
+        #icon {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+
+            <li><a href="proj.html">MUSIC</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>Listen to <br> Your Music</h1>
+        </div>
+        <div class="right-col">
+            <p><a href="proj.html" >Click Here To Listen</a></p>
+            <img src="media/play.png" id="icon">
+        </div>
+    </div>
+    <audio id="mysound">
+        <source src="media/music.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        let mysound = document.getElementById("mysound");
+        let icon = document.getElementById("icon");
+        icon.onclick = function () {
+            if (mysound.paused) {
+                mysound.play();
+                icon.src =
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png";
+            } else {
+                mysound.pause();
+                icon.src =
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

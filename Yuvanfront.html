@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .about-container {
+      border-color: rgb(18, 25, 25);
+      border-style: solid;
+      border-radius: 0%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-image img {
+      max-width: 70%;
+      height: 70%;
+      align-items: right;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: azure;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 30%;
+      transform: translateY(-50%);
+    }
+
+    .previous {
+      left: 20px;
+    }
+
+    .arrow {
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid rgb(19, 17, 17);
+      border-right: 2px solid rgb(19, 17, 17);
+    }
+
+    .previous .arrow {
+      transform: rotate(-135deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w3-row w3-padding-34" id="about">
+    <div class="about-container">
+      <div class="about-text">
+       <a href="Yuvansong1.html"> <h2><i>Anjaan</i></h2></a>
+        <audio controls>
+          <source src="Kadhalasai.mp3" type="audio/mpeg">
+        </audio>
+       <a href="Yuvansong2.html"> <h2><i>NGK </i></h2></a>
+        <audio controls>
+          <source src="Anbae Peranbae.mp3" type="audio/mpeg">
+        </audio>
+        <a href="Yuvansong3.html"><h2><i>Paiya </i></h2></a>
+        <audio controls>
+          <source src="Enkadhal.mp3" type="audio/mpeg">
+        </audio>
+       <a href="Yuvansong4.html"> <h2> <i>Love Today</i></h2></a>
+        <audio controls>
+          <source src="Anbae Peranbae.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="about-image">
+        <img src="yuvan.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
